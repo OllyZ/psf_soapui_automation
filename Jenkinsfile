@@ -27,7 +27,7 @@ echo "setting description"
 
 echo "setting external files"	
 	node('qa_linux_awscli'){
-		fileLoader.withGit('https://github.com/coretech/psf_soap_automation.git', 'master', "${env.IDT_JENKINS_GITHUB_CREDENTIALS}", 'qa_linux_awscli'){			 
+		fileLoader.withGit('https://github.com/OllyZ/psf_soapui_automation.git', 'master', "${env.IDT_JENKINS_GITHUB_CREDENTIALS}", 'qa_linux_awscli'){			 
 			 mailingHelper = fileLoader.load('MailingHelper.groovy');		 
 		}		
 	}
